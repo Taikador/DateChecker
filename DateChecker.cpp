@@ -3,14 +3,12 @@
 int date_logic(int y, int m, int d) {
 
     //Check Year
-    if (y < 0) {
+    if (y < 0)
         return 1;
-    }
 
     //Check Month
-    if (m < 0 || m > 12) {
+    if (m < 0 || m > 12)
         return 1;
-    }
 
     //If the Month has less than 30 days and more than 30 days were given in input, throw error!
     if (m == 2) {
